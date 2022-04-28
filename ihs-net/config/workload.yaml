@@ -10,8 +10,8 @@ spec:
     git:
       url: https://github.com/RobotNoodleMan/Tanzu
       ref:
-        branch: main
+        branch: master
   build:
     env:
-      - name: PB_DOTNET_PROJECT_PATH
+      - name: BP_DOTNET_PROJECT_PATH
         value: ihs-net
