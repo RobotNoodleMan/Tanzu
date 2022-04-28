@@ -1,0 +1,17 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: terry2-ihs-net
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: terry2-ihs-net
+spec:
+  source:
+    git:
+      url: https://github.com/RobotNoodleMan/Tanzu
+      ref:
+        branch: main
+  build:
+    env:
+      - name: PB_DOTNET_PROJECT_PATH
+        value: ihs-net
